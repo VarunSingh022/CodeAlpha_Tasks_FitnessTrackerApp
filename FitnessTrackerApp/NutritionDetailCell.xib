@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="GRf-Nx-g6x" customClass="NutritionDetailCell" customModule="FitnessTrackerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GRf-Nx-g6x" id="K7F-y9-1jQ">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQa-97-kY5">
+                        <rect key="frame" x="10" y="5" width="373" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3wd-JA-ecw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemOrangeColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMT-1f-4eE">
+                        <rect key="frame" x="10" y="36" width="373" height="59"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGd-Ze-PAt">
+                        <rect key="frame" x="1" y="36" width="75" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Dt8-NX-xkI"/>
+                            <constraint firstAttribute="width" constant="75" id="jeg-gu-xou"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemGray3Color"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZMT-1f-4eE" firstAttribute="leading" secondItem="K7F-y9-1jQ" secondAttribute="leading" constant="10" id="PJo-kE-Cpf"/>
+                    <constraint firstAttribute="trailing" secondItem="lQa-97-kY5" secondAttribute="trailing" constant="10" id="XJA-WY-MZb"/>
+                    <constraint firstItem="RGd-Ze-PAt" firstAttribute="top" secondItem="lQa-97-kY5" secondAttribute="bottom" constant="10" id="eC1-SD-znF"/>
+                    <constraint firstItem="lQa-97-kY5" firstAttribute="top" secondItem="K7F-y9-1jQ" secondAttribute="top" constant="5" id="eUc-1S-YgJ"/>
+                    <constraint firstItem="lQa-97-kY5" firstAttribute="leading" secondItem="K7F-y9-1jQ" secondAttribute="leading" constant="10" id="hC0-cr-ho8"/>
+                    <constraint firstAttribute="bottom" secondItem="ZMT-1f-4eE" secondAttribute="bottom" constant="5" id="hms-Sd-J2z"/>
+                    <constraint firstItem="RGd-Ze-PAt" firstAttribute="leading" secondItem="K7F-y9-1jQ" secondAttribute="leading" constant="1" id="rJJ-Ie-IbJ"/>
+                    <constraint firstItem="ZMT-1f-4eE" firstAttribute="top" secondItem="lQa-97-kY5" secondAttribute="bottom" constant="10" id="uNu-Qu-j4v"/>
+                    <constraint firstAttribute="trailing" secondItem="ZMT-1f-4eE" secondAttribute="trailing" constant="10" id="z22-xV-JPt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="notesLabel" destination="ZMT-1f-4eE" id="JBj-A5-Jv3"/>
+                <outlet property="nutritionLabel" destination="lQa-97-kY5" id="Mei-He-duw"/>
+            </connections>
+            <point key="canvasLocation" x="206.87022900763358" y="66.197183098591552"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
